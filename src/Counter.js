@@ -61,6 +61,11 @@ class Counter extends React.Component {
             }
         });
     }
+    stop() {
+      this.running = false;
+      clearInterval(this.watch);
+    }
+
   render() {
       return (
         <div>
